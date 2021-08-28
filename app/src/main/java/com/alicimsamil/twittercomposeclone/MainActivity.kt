@@ -29,7 +29,7 @@ fun MainScreen(){
     TwitterComposeCloneTheme {
         Surface(color = TwitterWhite) {
 
-            Scaffold(bottomBar = { BottomBar().TwitterBottomBar() }) {
+            Scaffold(bottomBar = { BottomBar().TwitterBottomBar() }, topBar = {TopBar().TwitterTopBar()}) {
 
             }
         }
