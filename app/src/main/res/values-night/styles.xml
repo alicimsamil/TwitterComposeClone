@@ -1,0 +1,5 @@
+<resources>
+    <style name="Widget.Theme.TwitterComposeClone.MyView" parent="">
+        <item name="android:background">@color/purple_700</item>
+    </style>
+</resources>
