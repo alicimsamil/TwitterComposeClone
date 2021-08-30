@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.alicimsamil.twittercomposeclone.model.TweetContent
@@ -27,7 +28,6 @@ class TweetRow {
 
 
     }
-
 
     @Composable
     fun Row(tweetContent: TweetContent){
@@ -85,43 +85,60 @@ class TweetRow {
                 Spacer(modifier = Modifier.size(5.dp))
 
 
-                Row(verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(end = 7.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
 
-                    Image(
-                        painter = painterResource(id = R.drawable.twittercomment),
-                        contentDescription = "Comment Button",
-                        Modifier.size(25.dp)
-                    )
+                    Row {
+                        Image(
+                            painter = painterResource(id = R.drawable.twittercomment),
+                            contentDescription = "Comment Button",
+                            Modifier.size(25.dp)
+                        )
 
-                    Spacer(modifier = Modifier.size(5.dp))
+                        Spacer(modifier = Modifier.size(5.dp))
 
-                    Text(text = "40", color = TwitterDarkGray)
+                        Text(text = "40", color = TwitterDarkGray)
+                    }
 
-                    Spacer(modifier = Modifier.size(30.dp))
 
-                    Image(
-                        painter = painterResource(id = R.drawable.twitterretweet),
-                        contentDescription = "Retweet Button",
-                        Modifier.size(25.dp)
-                    )
 
-                    Spacer(modifier = Modifier.size(5.dp))
+                    Row {
 
-                    Text(text = "1,069", color = TwitterDarkGray)
+                        Image(
+                            painter = painterResource(id = R.drawable.twitterretweet),
+                            contentDescription = "Retweet Button",
+                            Modifier.size(25.dp)
+                        )
 
-                    Spacer(modifier = Modifier.size(30.dp))
+                        Spacer(modifier = Modifier.size(5.dp))
 
-                    Image(
-                        painter = painterResource(id = R.drawable.twitterlike),
-                        contentDescription = "Like Button",
-                        Modifier.size(22.dp)
-                    )
+                        Text(text = "1,069", color = TwitterDarkGray)
 
-                    Spacer(modifier = Modifier.size(5.dp))
+                    }
 
-                    Text(text = "16.3K", color = TwitterDarkGray)
 
-                    Spacer(modifier = Modifier.size(20.dp))
+
+                    Row() {
+
+                        Image(
+                            painter = painterResource(id = R.drawable.twitterlike),
+                            contentDescription = "Like Button",
+                            Modifier.size(22.dp)
+                        )
+
+                        Spacer(modifier = Modifier.size(5.dp))
+
+
+                        Text(text = "16.3K", color = TwitterDarkGray)
+
+
+                    }
+
+
+
 
                     Image(
                         painter = painterResource(id = R.drawable.twittershare),

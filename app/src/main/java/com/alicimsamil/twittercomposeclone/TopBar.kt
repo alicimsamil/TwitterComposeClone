@@ -20,7 +20,7 @@ class TopBar {
 
             TopAppBar(
                 backgroundColor = TwitterWhite,
-                contentPadding = PaddingValues(start = 15.dp,top = 5.dp,bottom = 5.dp,end = 45.dp)
+                contentPadding = PaddingValues(start = 15.dp,end = 45.dp)
             ) {
 
 
