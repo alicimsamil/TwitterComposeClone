@@ -3,16 +3,16 @@ package com.alicimsamil.twittercomposeclone
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.alicimsamil.twittercomposeclone.model.TweetContent
+import com.alicimsamil.twittercomposeclone.ui.BottomBar
+import com.alicimsamil.twittercomposeclone.ui.TopBar
+import com.alicimsamil.twittercomposeclone.ui.TweetRow
 import com.alicimsamil.twittercomposeclone.ui.theme.TwitterComposeCloneTheme
 import com.alicimsamil.twittercomposeclone.ui.theme.TwitterWhite
 
@@ -46,7 +46,7 @@ fun MainScreen(){
     TwitterComposeCloneTheme {
         Surface(color = TwitterWhite) {
 
-            Scaffold(bottomBar = { BottomBar().TwitterBottomBar() }, topBar = {TopBar().TwitterTopBar()}) {
+            Scaffold(bottomBar = { BottomBar().TwitterBottomBar() }, topBar = { TopBar().TwitterTopBar()}) {
 
                 LazyColumn{
 

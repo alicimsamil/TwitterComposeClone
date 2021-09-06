@@ -1,4 +1,4 @@
-package com.alicimsamil.twittercomposeclone
+package com.alicimsamil.twittercomposeclone.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.alicimsamil.twittercomposeclone.R
 import com.alicimsamil.twittercomposeclone.ui.theme.TwitterWhite
 
 class TopBar {

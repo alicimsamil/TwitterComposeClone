@@ -1,7 +1,6 @@
-package com.alicimsamil.twittercomposeclone
+package com.alicimsamil.twittercomposeclone.ui
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Text
@@ -11,13 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alicimsamil.twittercomposeclone.R
 import com.alicimsamil.twittercomposeclone.model.TweetContent
 import com.alicimsamil.twittercomposeclone.ui.theme.TwitterBlack
 import com.alicimsamil.twittercomposeclone.ui.theme.TwitterDarkGray
-import com.alicimsamil.twittercomposeclone.ui.theme.TwitterWhite
 
 class TweetRow {
 
